@@ -100,7 +100,15 @@ fh.write (
         nodes: nodes,
         edges: edges
     };
-    var options = {};
+
+    var options = {
+      edges:{
+        arrows: {
+          to:     {enabled: true, scaleFactor:1, type:'arrow'},
+          }
+        }
+    }
+
 
     // initialize your network!
     var network = new vis.Network(container, data, options);
